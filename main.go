@@ -3,24 +3,31 @@ package main
 import (
 	"fmt"
 
-	heco "github.com/thebigyovadiaz/concurrency-pattern-go/advance-pattern/handling-errors-concurrent-operations"
-	mgc "github.com/thebigyovadiaz/concurrency-pattern-go/advance-pattern/managing-goroutine-context"
-	pgl "github.com/thebigyovadiaz/concurrency-pattern-go/advance-pattern/preventing-goroutine-leaks"
+	ep "github.com/thebigyovadiaz/concurrency-pattern-go/essential-pattern"
 )
 
 func main() {
 	fmt.Println("Concurrency Pattern Go")
 
+	/* fmt.Printf("\nAdvance Pattern\n")
 	// Managing goroutine with context
 	mgc.ExecProcessRequest()
-
 	fmt.Printf("\n--------------------------------\n\n")
 
 	// Preventing goroutine leaks
 	pgl.ExecWorker()
-
 	fmt.Printf("\n--------------------------------\n\n")
 
 	// Handling errors concurrent operations
 	heco.ExecProcess()
+	fmt.Printf("\n--------------------------------\n\n") */
+
+	fmt.Printf("\nEssential Pattern\n")
+
+	// Worker Pool Pattern
+	ep.ExecWorkerPool()
+	fmt.Printf("\n--------------------------------\n\n")
+
+	// Fan-In & Fan-Out Pattern
+	ep.ExecFanInFanOut()
 }
