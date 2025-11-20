@@ -25,13 +25,17 @@ func main() {
 	fmt.Printf("\nEssential Pattern\n")
 
 	// Worker Pool Pattern
-	ep.ExecWorkerPool()
-	fmt.Printf("\n--------------------------------\n\n")
+	// ep.ExecWorkerPool()
+	// fmt.Printf("\n--------------------------------\n\n")
 
 	// Fan-In & Fan-Out Pattern
-	ep.ExecFanInFanOut()
-	fmt.Printf("\n--------------------------------\n\n")
+	// ep.ExecFanInFanOut()
+	// fmt.Printf("\n--------------------------------\n\n")
 
 	// Pipeline Pattern
 	ep.ExecPipeline()
+	fmt.Printf("\n--------------------------------\n\n")
+
+	// Pub-Sub Pattern
+	ep.ExecPubSub()
 }
