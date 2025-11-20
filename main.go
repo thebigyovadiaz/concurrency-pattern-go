@@ -38,4 +38,8 @@ func main() {
 
 	// Pub-Sub Pattern
 	ep.ExecPubSub()
+	fmt.Printf("\n--------------------------------\n\n")
+
+	// Select with Timeout Pattern
+	ep.ExecSelectTimeout()
 }
