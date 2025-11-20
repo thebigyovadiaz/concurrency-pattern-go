@@ -30,4 +30,8 @@ func main() {
 
 	// Fan-In & Fan-Out Pattern
 	ep.ExecFanInFanOut()
+	fmt.Printf("\n--------------------------------\n\n")
+
+	// Pipeline Pattern
+	ep.ExecPipeline()
 }
