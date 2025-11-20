@@ -33,13 +33,17 @@ func main() {
 	// fmt.Printf("\n--------------------------------\n\n")
 
 	// Pipeline Pattern
-	ep.ExecPipeline()
-	fmt.Printf("\n--------------------------------\n\n")
+	// ep.ExecPipeline()
+	// fmt.Printf("\n--------------------------------\n\n")
 
 	// Pub-Sub Pattern
-	ep.ExecPubSub()
-	fmt.Printf("\n--------------------------------\n\n")
+	// ep.ExecPubSub()
+	// fmt.Printf("\n--------------------------------\n\n")
 
 	// Select with Timeout Pattern
 	ep.ExecSelectTimeout()
+	fmt.Printf("\n--------------------------------\n\n")
+
+	// Semaphore Pattern
+	ep.ExecSemaphore()
 }
